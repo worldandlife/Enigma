@@ -60,9 +60,9 @@ namespace Enigma
         //reflector
         char[] tableReflector = "yruhqsldpxngokmiebfzcwvjat".ToCharArray();
 
-        //switching panel
+        //plugboard
         //the letters are paired together
-        Dictionary<char, char> commutationPanel = new Dictionary<char, char>
+        Dictionary<char, char> plugboard = new Dictionary<char, char>
         {
             {'q', 'e'}, {'z', 'd'}, {'v', 'i'}, {'s', 'b'},
             {'e', 'q'}, {'d', 'z'}, {'i', 'v'}, {'b', 's'},
@@ -88,9 +88,9 @@ namespace Enigma
         {
             //get the length of the alphabet
             var len = table.Length;
-            //changing the letter before getting the position according to the switching scheme
-            if (commutationPanel.ContainsKey(ch))
-                ch = commutationPanel[ch];
+            //changing the letter before getting the position according to the plugboard scheme
+            if (plugboard.ContainsKey(ch))
+                ch = plugboard[ch];
             //current position of the character in the alphabet
             var pos = Array.IndexOf(table, ch);
             //get a position with a shift using the movement of the rotors
@@ -118,10 +118,10 @@ namespace Enigma
                         leftRotor = 0;
                 }
             }
-            //changing the letter after getting the position according to the switching scheme
+            //changing the letter after getting the position according to the plugboard scheme
             var result = table[pos];
-            if (commutationPanel.ContainsKey(table[pos]))
-                result = commutationPanel[table[pos]];
+            if (plugboard.ContainsKey(table[pos]))
+                result = plugboard[table[pos]];
 
             return result;
         }
