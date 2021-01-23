@@ -24,4 +24,4 @@ Dictionary<char, char> plugboard = new Dictionary<char, char>
 ```
 Enjoy:smiley:
 
-![Image alt](https://psv4.userapi.com/c536132/u75139039/docs/d44/4b09b189ef1b/enigma.jpg?extra=426xViNjDUv5TaM5psF3K58XqiC_yxcEKwDe1vVWz-lRwWvCuhc6_nvmw6-5tWG9bFjSZujPfQs0_4_I8G5bRmeOz-uhIPnEehVm5CqySKDTFpwOnp_J-61cJ--5-w3IUi0yxIpfD_9IogWFt44w8mY, "Enigma console")
+![Image alt](https://psv4.userapi.com/c536132/u75139039/docs/d44/febe4cd05e52/enigma.jpg?extra=jnGk-m-R1cK17Fe7Ps5mP_oyTkMWZ2skpbZqgPuedSCG-HGhBLBN2CWpv3tiGqFN5yUYqqmj0z6xA6XSdK_9lRk0KhPTufIIAy3_AAy-1e6jX6fT8Sz8GNA1N5RfZUdhVNJrK6n1fhz6V906iJXFWSY, "Enigma console")
